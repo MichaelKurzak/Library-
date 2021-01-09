@@ -1,8 +1,8 @@
-package pl.javastart.laibrary.app;
+package pl.javastart.library.app;
 
-import pl.javastart.laibrary.model.Book;
+import pl.javastart.library.model.Book;
 
-class Laibrary {
+class Library {
     public static void main(String[] args) {
         final String appName = "Biblioteka v0.5";
 

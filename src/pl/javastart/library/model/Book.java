@@ -1,4 +1,4 @@
-package pl.javastart.laibrary.model;
+package pl.javastart.library.model;
 
 public class Book {
 
