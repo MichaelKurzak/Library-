@@ -1,4 +1,4 @@
-package pl.javastart.io;
+package pl.javastart.library.io;
 
 import pl.javastart.library.model.Book;
 

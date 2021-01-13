@@ -1,6 +1,6 @@
 package pl.javastart.library.app;
 
-import pl.javastart.io.DataReader;
+import pl.javastart.library.io.DataReader;
 import pl.javastart.library.model.Book;
 
 class Library {
