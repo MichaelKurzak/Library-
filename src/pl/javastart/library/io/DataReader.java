@@ -23,7 +23,12 @@ public class DataReader {
         int pages = sc.nextInt();
         sc.nextLine();
         return new Book (title, author, releaseData, pages, publisher, isbn);
+    }
 
+    public int getInt() {                                                    //odczyt opcji wybranej przez urzytkownika
+        int number = sc.nextInt();
+        sc.nextLine();
+        return number;
     }
 
     public void clos() {

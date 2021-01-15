@@ -1,3 +1,5 @@
+//Wczytanie od uzytkownika
+
 package pl.javastart.library.model;
 
 public class Book {
