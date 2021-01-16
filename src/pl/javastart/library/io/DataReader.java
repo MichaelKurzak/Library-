@@ -1,6 +1,7 @@
 package pl.javastart.library.io;
 
 import pl.javastart.library.model.Book;
+import pl.javastart.library.model.Magazine;
 
 import java.util.Scanner;
 
@@ -17,15 +18,29 @@ public class DataReader {
         String publisher = sc.nextLine();
         System.out.println("Proszę o podanie ISBN");
         String isbn = sc.nextLine();
-        System.out.println("Proszę o podanie daty wydania");
-        int releaseData = sc.nextInt();
+        System.out.println("Proszę o podanie roku wydania");
+        int releaseData = getInt();
         System.out.println("Proszę o podanie ilości stron");
-        int pages = sc.nextInt();
-        sc.nextLine();
+        int pages = getInt();
         return new Book (title, author, releaseData, pages, publisher, isbn);
     }
 
-    public int getInt() {                                                    //odczyt opcji wybranej przez urzytkownika
+    public Magazine readAndCreateMagazine() {
+        System.out.println("Proszę o podanie tytułu");
+        String title = sc.nextLine();
+        System.out.println("Proszę o podanie wydawnictwa");
+        String publisher = sc.nextLine();
+        System.out.println("Proszę o podanie jezyka");
+        String language = sc.nextLine();
+        System.out.println("Proszę o podanie roku wydania");
+        int year = getInt();
+        System.out.println("Proszę o podanie miesiąca wydania");
+        int month = getInt();
+        System.out.println("Proszę o podanie dnia wydania");
+        int day = getInt();
+        return new Magazine(title, publisher, language, year, month, day);
+    }
+        public int getInt() {                                                    //odczyt opcji wybranej przez urzytkownika
         int number = sc.nextInt();
         sc.nextLine();
         return number;
