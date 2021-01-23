@@ -22,7 +22,7 @@ public class DataReader {
         int releaseData = getInt();
         System.out.println("Proszę o podanie ilości stron");
         int pages = getInt();
-        return new Book (title, author, releaseData, pages, publisher, isbn);
+        return new Book (title, author, publisher, pages,releaseData, isbn);
     }
 
     public Magazine readAndCreateMagazine() {
